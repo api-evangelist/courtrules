@@ -1,0 +1,16 @@
+generated: '2026-10-02'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.courtrules.app/authentication.md
+sources:
+- https://docs.courtrules.app/authentication.md
+- https://docs.courtrules.app/quickstart.md
+description: Authentication methods for Court Rules API
+schemes:
+- type: http-bearer
+  name: Bearer token
+  evidence: All API endpoints require a Bearer token in the `Authorization` header.
+  location: header
+  header: Authorization
+  how_to_obtain: API keys are issued through the console dashboard at console.courtrules.app; the key is used as a Bearer token.
+docs: https://docs.courtrules.app/authentication.md

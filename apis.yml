@@ -1,30 +1,83 @@
 aid: courtrules
 name: Court Rules
-description: 'Court Rules is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://www.courtrules.app/opengraph-image?a428ae78c988eff6
+description: Court Rules provides structured legal and enforcement data from U.S. federal and state courts, including judge rules, filing deadlines,
+  court holidays, and enforcement actions. The platform offers an API that enables developers to integrate court rule searches, compliance checks,
+  and legal intelligence into products, supporting both free tier access and paid plans for higher volume and advanced features.
 url: https://raw.githubusercontent.com/api-evangelist/courtrules/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-02 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-02'
 modified: '2026-10-02'
 tags:
-- Company
-apis: []
+- LegalData
+- API
+- CourtRules
+- Compliance
+- USLaw
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: RateLimits
+  url: rate-limits/courtrules-rate-limits.yml
+- type: Authentication
+  url: authentication/courtrules-authentication.yml
+- type: Conformance
+  url: conformance/courtrules-conformance.yml
+- type: LLMsTxt
+  url: llms/courtrules-llms.txt
+- type: AgentCard
+  url: a2a/courtrules-a2a.yml
+- type: MCPServer
+  url: mcp/courtrules-mcp.yml
+- type: WellKnown
+  url: well-known/courtrules-well-known.yml
+- type: Hosts
+  url: hosts/courtrules-hosts.yml
+- type: Vendors
+  url: vendors/courtrules-vendors.yml
+- type: Leadership
+  url: https://www.courtrules.app/team
+- type: GettingStarted
+  url: https://docs.courtrules.app/quickstart
+- type: APIReference
+  url: https://docs.courtrules.app/api-reference/overview
+- type: DomainSecurity
+  url: security/courtrules-domain-security.yml
 - type: Website
   url: https://www.courtrules.app/
 - type: Documentation
   url: https://www.courtrules.app/api
-x-submission-notes: U.S. court rules, judge procedures and privacy-enforcement data API with filing-compliance
-  checks. Submitted 3x (notices 2880, 2881, 2883).
-x-submission-probe: root 200; /api 200 (endpoints, pricing, free tier); llms.txt 200; MCP mcp.courtrules.app/mcp
-  401 (Bearer); no OpenAPI; 404 probe 404
+- type: SignUp
+  url: https://www.courtrules.app/api
+- type: TermsOfService
+  url: https://www.courtrules.app/terms
+- type: PrivacyPolicy
+  url: https://www.courtrules.app/privacy
+- type: Support
+  url: https://www.courtrules.app/support
+- type: Blog
+  url: https://www.courtrules.app/blog
+apis:
+- name: Court Rules API
+  description: Deterministic court rules compliance checking for federal filings
+  humanURL: https://docs.courtrules.app/api-reference/overview
+  baseURL: https://api.courtrules.app
+  aid: courtrules:court-rules-api
+x-submission-notes: U.S. court rules, judge procedures and privacy-enforcement data API with filing-compliance checks. Submitted 3x (notices 2880,
+  2881, 2883).
+x-submission-probe: root 200; /api 200 (endpoints, pricing, free tier); llms.txt 200; MCP mcp.courtrules.app/mcp 401 (Bearer); no OpenAPI; 404
+  probe 404
 x-submitted-by: courtrules.team@gmail.com (apis.io/add, 2026-09-30)
+x-enrichment:
+  date: '2026-10-02'
+  status: enriched
+  artifacts_added: 19
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

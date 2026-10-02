@@ -1,0 +1,30 @@
+generated: '2026-10-02'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.courtrules.app/api-reference/rate-limits.md
+sources:
+- https://docs.courtrules.app/api-reference/rate-limits.md
+name: Court Rules rate limits
+limits:
+- name: POST /api/v1/classify
+  limit_text: 5 RPM
+  max: 5
+  window: minute
+  endpoint: POST /api/v1/classify
+- name: POST /api/v1/check
+  limit_text: 60 RPM
+  max: 60
+  window: minute
+  endpoint: POST /api/v1/check
+- name: GET /api/v1/courts, /judges, /rules
+  limit_text: 300 RPM
+  max: 300
+  window: minute
+  endpoint: GET /api/v1/courts, /judges, /rules
+headers:
+- X-RateLimit-Limit
+- X-RateLimit-Remaining
+- X-RateLimit-Reset
+- Retry-After
+exhaustion_status: 429
+docs: https://docs.courtrules.app/api-reference/rate-limits.md

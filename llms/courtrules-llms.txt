@@ -1,0 +1,33 @@
+# Court Rules API
+
+> Structured legal data feeds: court rules, filing compliance, judge requirements, document classification, and privacy enforcement intelligence
+
+- [Introduction](https://docs.courtrules.app/introduction.md): Structured legal data for platform teams. Court rules for 20+ courts. Enforcement intelligence from 21 jurisdictions. Available via API and MCP.
+- [Authentication](https://docs.courtrules.app/authentication.md): How to authenticate with the Court Rules API
+- [Quickstart](https://docs.courtrules.app/quickstart.md): Get compliance results in under a minute
+- [Same Document, Different Judge](https://docs.courtrules.app/guides/same-document-different-judge.md): How the same filing gets different compliance results depending on the assigned judge
+- [MCP: Court Rules](https://docs.courtrules.app/guides/mcp-court-rules.md): Connect AI agents to judge-specific filing rules and compliance checks using the Model Context Protocol.
+- [Check Categories](https://docs.courtrules.app/concepts/check-categories.md): What the /check endpoint validates and when each check applies
+- [Document Structure](https://docs.courtrules.app/concepts/document-structure.md): What document metadata to provide and what checks it enables
+- [Courts and Coverage](https://docs.courtrules.app/concepts/coverage-levels.md): How the API handles standing orders and judge-specific rules
+- [Integration Patterns](https://docs.courtrules.app/guides/integration-patterns.md): How to integrate court rules and enforcement data into your application
+- [Enforcement Data](https://docs.courtrules.app/concepts/enforcement-data.md): Structured privacy enforcement actions from federal and state regulators.
+- [MCP: Enforcement Data](https://docs.courtrules.app/guides/mcp-enforcement.md): Connect AI agents to structured privacy enforcement data from 21 jurisdictions using the Model Context Protocol.
+- [Building with AI Agents](https://docs.courtrules.app/guides/building-with-ai-agents.md): How to use the Court Rules API and enforcement data with AI agents and LLMs
+- [Overview](https://docs.courtrules.app/api-reference/overview.md): API Reference for Court Rules and Enforcement Data
+- [List Courts](https://docs.courtrules.app/api-reference/courts.md): Returns every court we map, with coverage status
+- [Get Court](https://docs.courtrules.app/api-reference/get-court.md): Returns detailed information for a single court
+- [Court Holidays](https://docs.courtrules.app/api-reference/holidays.md): Returns court holidays and closure dates
+- [List Judges](https://docs.courtrules.app/api-reference/judges.md): Returns the current judges for a court, with name, type, bio, chambers address, and whether we hold their own rules
+- [Get Rules](https://docs.courtrules.app/api-reference/rules.md): Returns every rule that applies to a judge, from the court-wide layer down to the judge's own standing orders
+- [Search Extracted Rules](https://docs.courtrules.app/api-reference/extracted-rules.md): Query validated extracted filing rules from active source documents, including state court e-filing, timing, service, fee, courtesy-copy, and courtroom rules
+- [Check Document](https://docs.courtrules.app/api-reference/check.md): Run deterministic compliance checks against a federal court filing, checking page limits, formatting, required sections, and judge-specific standing order rules
+- [Classify Document](https://docs.courtrules.app/api-reference/classify.md): Upload a PDF and receive document classification, extracted metadata, and a partial /check request body when supported
+- [Rate Limits](https://docs.courtrules.app/api-reference/rate-limits.md): Per-key request limits, response headers, and retry guidance
+
+## OpenAPI Specs
+
+- [openapi](/api-reference/openapi.json)
+
+
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

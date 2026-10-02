@@ -1,0 +1,13 @@
+deployment:
+  mode: remote
+  endpoint: https://mcp.courtrules.app/mcp
+  install: ""
+  package: ""
+  auth: unknown
+  verified: probed
+generated: '2026-10-02'
+method: probed
+source:
+  - url: https://mcp.courtrules.app/mcp
+    status: 401
+    note: "MCP endpoint requires Bearer token"

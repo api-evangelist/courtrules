@@ -1,0 +1,14 @@
+generated: '2026-10-02'
+method: probed
+source:
+  - https://www.courtrules.app/privacy
+signals:
+  data_retention:
+    url: https://www.courtrules.app/privacy
+    section: "4. Data Retention"
+    note: "Specifies data retention period, indicating retention until purpose fulfilled or as required by law."
+    evidence:
+      - quote: "We retain your information for as long as necessary to fulfill the purposes described in this Privacy Policy, unless a longer retention period is required or permitted by law."
+        http_status: 200
+        fetched: "2026-10-02"
+        source: https://www.courtrules.app/privacy
