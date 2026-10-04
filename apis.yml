@@ -12,7 +12,16 @@ x-tier-reason: enrichment pass 2026-10-02 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-02'
 modified: '2026-10-02'
+x-docs-platform: mintlify
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: vercel
 tags:
+- Legal Data
+- CourtRules
+- Compliance
+- US Law
+tags_raw:
 - LegalData
 - API
 - CourtRules
